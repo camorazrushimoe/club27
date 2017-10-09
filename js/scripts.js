@@ -17,7 +17,7 @@ $(document).ready(function(){
     async: false
     });
 	var teamsList;
-	var teamsListPull= $.getJSON("/games.json",function(response){
+	var teamsListPull= $.getJSON("games.json",function(response){
       teamsList=response;
       
   });
