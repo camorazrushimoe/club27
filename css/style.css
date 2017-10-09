@@ -354,15 +354,18 @@ p {
     float: right; }
 
 .main {
+  min-width: 1400px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url("../images/main-bg.png");
   vertical-align: top;
   margin-top: -4px; }
   .main .container {
     padding: 0; }
   .main-bg {
     margin-top: 5px;
-    max-width: 1400px;
+    max-width: 1920px;
     padding-bottom: 71%;
-    background-image: url("../images/main-bg.png");
     background-size: cover;
     background-position: center center; }
   .main-logo {

@@ -333,6 +333,10 @@ input[type=submit], input[type=button] {
 	}
 }
 .main{
+	min-width: 1400px;
+	background-position:center top;
+	background-repeat: no-repeat;
+	background-image: url("../images/main-bg.png");
 	.container{
 		padding:0;
 	}
@@ -340,9 +344,9 @@ input[type=submit], input[type=button] {
 	margin-top: -4px;
 	&-bg{
 		margin-top: 5px;
-		max-width: 1400px;
+		max-width: 1920px;
 		 padding-bottom: 71%;
-		background-image: url("../images/main-bg.png");
+		
 		background-size:cover;
 		background-position: center center;
 	}

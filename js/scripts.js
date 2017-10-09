@@ -8,8 +8,9 @@ $(document).ready(function(){
 			if($(this).hasClass("open")){
 				$(this).removeClass("open");
 			} else{
-				$(this).siblings(".fractions-unit").removeClass("open");
 				$(this).addClass("open");
+				$(this).siblings(".fractions-unit").removeClass("open");
+				
 			}
 
 		}

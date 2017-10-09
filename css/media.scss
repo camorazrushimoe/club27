@@ -63,23 +63,24 @@
 		}
 	}
 	.main{
-
+		min-width: 320px;
+		background-size: 170%;
 		 &-bg{
 		 	margin-top:0;
 		 	
 		 	max-width: 100%;
 		 	background-size: 100%;
-		 	background-repeat:no-repeat;
-		 	background-image: url("../images/main-bg-mobile.png");
+		 	//background-repeat:no-repeat;
+		 	//background-image: url("../images/main-bg-mobile.png");
 		 }
 		 &-logo{
-		 	top:29%;
+		 	top:31%;
 		 	width:200px;
 		 	left:calc(50% - 100px);
 		 }
 		 &-leaders{
 		 	width:100%;
-		 	margin-top:70px;
+		 	margin-top:20px;
 		 	&-title{
 		 		font-size: 24px;
 		 	}
@@ -129,7 +130,7 @@
 		&-unit{
 			max-height:85px;
 			overflow:hidden;
-			@include transition(.3s);
+			@include transition(.7s);
 			padding:0 12px;
 			padding-bottom: 20px;
 			width:100%;
@@ -137,7 +138,7 @@
 			border-bottom:1px solid #332946;
 			&.open{
 				background-color:#0c0022;
-				max-height: 700px;
+				max-height: 500px;
 			}
 			&-header{
 				padding-top:12px;
