@@ -64,14 +64,14 @@
 	}
 	.main{
 		min-width: 320px;
-		background-size: 170%;
+		background-size: 100%;
 		 &-bg{
 		 	margin-top:0;
 		 	
 		 	max-width: 100%;
 		 	background-size: 100%;
-		 	//background-repeat:no-repeat;
-		 	//background-image: url("../images/main-bg-mobile.png");
+		 	background-repeat:no-repeat;
+		   	background-image: url("../images/main-bg-mobile.png");
 		 }
 		 &-logo{
 		 	top:31%;
@@ -130,7 +130,7 @@
 		&-unit{
 			max-height:85px;
 			overflow:hidden;
-			@include transition(.7s);
+			@include transition(.5s);
 			padding:0 12px;
 			padding-bottom: 20px;
 			width:100%;
@@ -138,7 +138,7 @@
 			border-bottom:1px solid #332946;
 			&.open{
 				background-color:#0c0022;
-				max-height: 500px;
+				max-height: 440px;
 			}
 			&-header{
 				padding-top:12px;
@@ -258,10 +258,14 @@
 		
 	}
 	.gradient{
+			
+			
+			
 			.desktop{
 				display: none;
 			}
 			.mobile{
+				max-height: 300px;
 				display: inline-block;
 			}
 		}

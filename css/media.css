@@ -45,11 +45,13 @@
         vertical-align: top; }
   .main {
     min-width: 320px;
-    background-size: 170%; }
+    background-size: 100%; }
     .main-bg {
       margin-top: 0;
       max-width: 100%;
-      background-size: 100%; }
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-image: url("../images/main-bg-mobile.png"); }
     .main-logo {
       top: 31%;
       width: 200px;
@@ -96,10 +98,10 @@
     .fractions-unit {
       max-height: 85px;
       overflow: hidden;
-      -moz-transition: all ease-in-out 0.7s;
-      -o-transition: all ease-in-out 0.7s;
-      -webkit-transition: all ease-in-out 0.7s;
-      transition: all ease-in-out 0.7s;
+      -moz-transition: all ease-in-out 0.5s;
+      -o-transition: all ease-in-out 0.5s;
+      -webkit-transition: all ease-in-out 0.5s;
+      transition: all ease-in-out 0.5s;
       padding: 0 12px;
       padding-bottom: 20px;
       width: 100%;
@@ -107,7 +109,7 @@
       border-bottom: 1px solid #332946; }
       .fractions-unit.open {
         background-color: #0c0022;
-        max-height: 500px; }
+        max-height: 440px; }
       .fractions-unit-header {
         padding-top: 12px;
         padding-left: 10px;
@@ -201,4 +203,5 @@
   .gradient .desktop {
     display: none; }
   .gradient .mobile {
+    max-height: 300px;
     display: inline-block; } }

@@ -276,7 +276,9 @@ input[type=submit], input[type=button] {
 
 }
 
-
+.clear{
+	float:none;
+}
 
 /*	-------------------------------------------------
 	Styles
@@ -334,9 +336,11 @@ input[type=submit], input[type=button] {
 }
 .main{
 	min-width: 1400px;
+	width:100%;
 	background-position:center top;
 	background-repeat: no-repeat;
-	background-image: url("../images/main-bg.png");
+	background-size: cover;
+	background-image: url("../images/main-bg-gradient.png");
 	.container{
 		padding:0;
 	}
@@ -344,9 +348,9 @@ input[type=submit], input[type=button] {
 	margin-top: -4px;
 	&-bg{
 		margin-top: 5px;
-		max-width: 1920px;
+		max-width: 1400px;
 		 padding-bottom: 71%;
-		
+		background-image:url("../images/main-bg.png");
 		background-size:cover;
 		background-position: center center;
 	}
@@ -379,7 +383,15 @@ input[type=submit], input[type=button] {
 				&:last-child{
 					border:none;
 				}
+				.number{
+					vertical-align: top;
+					display: inline-flex;
+					align-items:center;
+				}
 				.name{
+					line-height: 30px;
+					display: inline-block;
+					width:calc(100% - 170px);
 					letter-spacing:-0.96px;
 					opacity:0.7;
 				}
@@ -465,6 +477,7 @@ input[type=submit], input[type=button] {
 		&-list{
 
 			&-unit{
+				line-height: 46px;
 				height:46px;
 				
 				.star{
@@ -493,7 +506,7 @@ input[type=submit], input[type=button] {
 					}
 				}
 				.underline{
-					padding-top:12px;
+					
 					height:100%;
 					border-bottom:1px solid #3f3356;
 					padding-right: 9px;
@@ -501,6 +514,10 @@ input[type=submit], input[type=button] {
 					width:calc(100% - 102px - 50px);
 				}
 				.title{
+					align-items:center;
+					display:inline-flex;
+					line-height: 20px;
+					max-width: 90%;
 					height:100%;
 					float:left;
 				}
@@ -552,7 +569,7 @@ input[type=submit], input[type=button] {
 		padding:0 45px;
 		position: absolute;
 		width:100%;
-		top:153px;
+		top:-125px;
 		left:0;
 		&-unit{
 			cursor: pointer;
@@ -595,7 +612,7 @@ input[type=submit], input[type=button] {
 				display: inline-block;
 				vertical-align: top;
 				margin-top: 10px;
-				margin-left: -10px;
+				margin-left: 15px;
 				font-size: 24px;
 			}
 		}
@@ -611,11 +628,12 @@ input[type=submit], input[type=button] {
 			}
 			tr{
 				
-				height:45px;
+				line-height:45px;
 				border-bottom:1px solid #333333;
 				td{
 					vertical-align: middle;
 					&:nth-child(1){
+						line-height: 25px;
 						padding-left: 10px;
 					}
 					&:nth-child(2),&:nth-child(3){
