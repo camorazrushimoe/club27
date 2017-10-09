@@ -17,11 +17,13 @@ $(document).ready(function(){
 
 	})
 	$(".results-wrap").slick({
+		adaptiveHeight:true,
 		slide:".results-unit",
 		infinite:false,
 		slidesToShow:4,
 		slidesToScroll:1,
 		variableWidth:true,
+
 		prevArrow:".results-controls-unit.prev",
 		nextArrow:".results-controls-unit.next",
 		draggable:false,

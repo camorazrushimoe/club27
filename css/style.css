@@ -611,15 +611,15 @@ p {
       cursor: pointer;
       margin-top: 83px;
       margin-left: 15px; }
-    .results-unit.controls {
+    .results-unit.notPlayed {
       height: 278px;
       padding-left: 30px;
       width: 213px;
       background: #0c0022;
       color: #fff; }
-      .results-unit.controls.prev {
+      .results-unit.notPlayed.prev {
         color: #be0050; }
-      .results-unit.controls.next {
+      .results-unit.notPlayed.next {
         padding-left: 41px; }
 
 .gradient {
