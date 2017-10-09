@@ -561,7 +561,8 @@ p {
         transform: rotate(180deg);
         float: right; }
       .results-controls-unit.inactive {
-        display: none !important; }
+        opacity: 0;
+        visibility: hidden; }
   .results-unit {
     padding-top: 38px;
     padding-left: 40px;

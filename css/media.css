@@ -138,41 +138,47 @@
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.84) 0%, rgba(0, 0, 0, 0.8) 89%, rgba(0, 0, 0, 0.04) 100%);
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.84)), color-stop(89%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.04)));
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.84) 0%, rgba(0, 0, 0, 0.8) 89%, rgba(0, 0, 0, 0.04) 100%); }
+    .results .slick-slide {
+      margin: 0; }
     .results-title {
       font-size: 24px; }
     .results-text {
       padding: 0 20px;
       width: 100%;
       margin-bottom: 60px; }
-    .results-controls-mobile {
+    .results-controls {
       padding: 0 12px;
       position: absolute;
       width: 100%;
       top: 30px;
       left: 0;
       z-index: 5; }
-      .results-controls-mobile-unit {
+      .results-controls-unit {
         width: 37px;
         height: 32px;
         background-repeat: no-repeat;
         background-image: url("../images/arrow-mobile.png");
         background-position: center;
         cursor: pointer; }
-        .results-controls-mobile-unit.inactive {
-          opacity: 0.23; }
-        .results-controls-mobile-unit.prev {
+        .results-controls-unit.inactive {
+          opacity: 0.23;
+          visibility: visible; }
+        .results-controls-unit.prev {
           float: left; }
-        .results-controls-mobile-unit.next {
+        .results-controls-unit.next {
           -webkit-transform: rotate(180deg);
           -ms-transform: rotate(180deg);
           transform: rotate(180deg);
           float: right; }
     .results-unit {
+      margin: 0;
       background: none;
       padding: 0;
       width: 100%; }
       .results-unit.controls {
-        display: none; }
+        background-color: #000;
+        padding: 0;
+        width: 100%; }
       .results-unit-list {
         width: 100%; }
         .results-unit-list-header {
@@ -181,6 +187,8 @@
             padding: 0 5px; }
           .results-unit-list-header .points {
             padding: 0 5px; }
+      .results-unit-text {
+        text-align: center; }
       .results-unit-date {
         padding-top: 30px;
         text-align: center; }

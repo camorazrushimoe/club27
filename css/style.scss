@@ -565,7 +565,8 @@ input[type=submit], input[type=button] {
 				float:right;
 			}
 			&.inactive{
-				display: none!important;
+				opacity:0;
+				visibility:hidden;
 			}
 		}
 	}

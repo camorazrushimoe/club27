@@ -16,44 +16,48 @@ $(document).ready(function(){
 
 	})
 	$(".results-wrap").slick({
-		variableWidth:true,
 		slide:".results-unit",
 		infinite:false,
 		slidesToShow:4,
 		slidesToScroll:1,
-		variableHeight:true,
+		variableWidth:true,
 		prevArrow:".results-controls-unit.prev",
 		nextArrow:".results-controls-unit.next",
 		draggable:false,
 		responsive:[
-		
-		{
-			breakpoint:768,
-			settings:{
-				slidesToShow:1,
-				slidetToScroll:1,
-				slide:".results-unit.gamesResult",
+			{
+				breakpoint:768,
+				settings:{
+					variableWidth:false,
+					slidesToShow:1
+				}
 			}
-		},
+		
 
 		]
 	})
 	$('.results-wrap').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 		
 		var amountOfSlides=$(".results-wrap").find(".results-unit").length;
-	
 	  if(nextSlide==0){
 	  	$(".results-controls-unit.prev").addClass("inactive");
 	  	
 	  } else{
 	  	$(".results-controls-unit.prev").removeClass("inactive");
 	  }
-	  
-	  if(nextSlide==amountOfSlides-4){
-	  	$(".results-controls-unit.next").addClass("inactive");
-	  } else{
-	  	$(".results-controls-unit.next").removeClass("inactive");
-	  }
+	  if($(window).width()>768){
+		  if(nextSlide==amountOfSlides-5){
+		  	$(".results-controls-unit.next").addClass("inactive");
+		  } else{
+		  	$(".results-controls-unit.next").removeClass("inactive");
+		  }
+		} else{
+			if(nextSlide==amountOfSlides-1){
+		  	$(".results-controls-unit.next").addClass("inactive");
+		  } else{
+		  	$(".results-controls-unit.next").removeClass("inactive");
+		  }
+		}
 	});
 	$(document).on('click', 'a[href=#]', function(e){ e.preventDefault(); });
 
