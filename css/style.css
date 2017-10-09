@@ -511,6 +511,8 @@ p {
   padding-bottom: 50px;
   position: relative;
   margin-top: 129px; }
+  .results .slick-slide {
+    margin: 0 4px; }
   .results-title {
     text-align: center;
     font-family: 'GraublauSlabBold';
@@ -537,6 +539,29 @@ p {
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start; }
+  .results-controls {
+    z-index: 3;
+    padding: 0 45px;
+    position: absolute;
+    width: 100%;
+    top: 153px;
+    left: 0; }
+    .results-controls-unit {
+      cursor: pointer;
+      width: 126px;
+      height: 92px;
+      background-image: url("../images/arrow.png");
+      background-position: center center;
+      background-repeat: no-repeat; }
+      .results-controls-unit.prev {
+        float: left; }
+      .results-controls-unit.next {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+        float: right; }
+      .results-controls-unit.inactive {
+        display: none !important; }
   .results-unit {
     padding-top: 38px;
     padding-left: 40px;

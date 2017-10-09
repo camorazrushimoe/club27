@@ -16,43 +16,43 @@ $(document).ready(function(){
 
 	})
 	$(".results-wrap").slick({
-		slide:".results-unit.gamesResult",
+		variableWidth:true,
+		slide:".results-unit",
 		infinite:false,
+		slidesToShow:4,
+		slidesToScroll:1,
 		variableHeight:true,
-		initialSlide:1,
-		prevArrow:".results-controls-mobile-unit.prev",
-		nextArrow:".results-controls-mobile-unit.next",
+		prevArrow:".results-controls-unit.prev",
+		nextArrow:".results-controls-unit.next",
+		draggable:false,
 		responsive:[
-		{
-			breakpoint:10000,
-			settings:"unslick"
-		},
+		
 		{
 			breakpoint:768,
 			settings:{
+				slidesToShow:1,
+				slidetToScroll:1,
 				slide:".results-unit.gamesResult",
-				infinite:false,
-				variableHeight:true,
-				initialSlide:1,
-				prevArrow:".results-controls-mobile-unit.prev",
-				nextArrow:".results-controls-mobile-unit.next",
 			}
 		},
 
 		]
 	})
 	$('.results-wrap').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		console.log(nextSlide);
-		var amountOfSlides=$(".results-wrap").find(".results-unit.gamesResult").length;
-		console.log(amountOfSlides);
+		
+		var amountOfSlides=$(".results-wrap").find(".results-unit").length;
+	
 	  if(nextSlide==0){
-	  	$(".results-controls-mobile-unit.prev").addClass("inactive");
-	  	$(".results-controls-mobile-unit.next").removeClass("inactive");
+	  	$(".results-controls-unit.prev").addClass("inactive");
+	  	
+	  } else{
+	  	$(".results-controls-unit.prev").removeClass("inactive");
 	  }
-	  if(nextSlide==amountOfSlides-1){
-
-	  	$(".results-controls-mobile-unit.prev").removeClass("inactive");
-	  	$(".results-controls-mobile-unit.next").addClass("inactive");
+	  
+	  if(nextSlide==amountOfSlides-4){
+	  	$(".results-controls-unit.next").addClass("inactive");
+	  } else{
+	  	$(".results-controls-unit.next").removeClass("inactive");
 	  }
 	});
 	$(document).on('click', 'a[href=#]', function(e){ e.preventDefault(); });

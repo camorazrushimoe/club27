@@ -518,6 +518,9 @@ input[type=submit], input[type=button] {
 	padding-bottom:50px;
 	position: relative;
 	margin-top: 129px;
+	.slick-slide{
+		margin: 0 4px;
+	}
 	&-title{
 		text-align: center;
 		font-family:'GraublauSlabBold';
@@ -539,6 +542,32 @@ input[type=submit], input[type=button] {
 		display: flex;
 		justify-content:space-between;
 		align-items:flex-start;
+	}
+	&-controls{
+		z-index:3;
+		padding:0 45px;
+		position: absolute;
+		width:100%;
+		top:153px;
+		left:0;
+		&-unit{
+			cursor: pointer;
+			width:126px;
+			height:92px;
+			background-image:url("../images/arrow.png");
+			background-position: center center;
+			background-repeat: no-repeat;
+			&.prev{
+				float:left;
+			}
+			&.next{
+				transform:rotate(180deg);
+				float:right;
+			}
+			&.inactive{
+				display: none!important;
+			}
+		}
 	}
 	&-unit{
 		padding-top:38px;
@@ -633,6 +662,7 @@ input[type=submit], input[type=button] {
 		}
 		.mobile{
 			display:none;
+
 		}
 	}
 
